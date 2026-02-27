@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+    <!--Responsive Navbar-->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <!--background col green,pad-30px,flex(same line),center,split(jb),shadow(under shadow),sticky(we scroll its come top),when nav bar reach top-0 its stop,zindex-10 priority 1st-->
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6 md:hidden">
+            <path fill-rule="evenodd"
+                d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg> <!--menu bar , medium screen its hide(md:hid)-->
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <!--all in same line,gap,textcolour,for phone this not appear,if md screen then its show-->
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+                <!--when i touch its have underline,textcol black-->
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Our Product-->
+     <section class="p-4 text-center"> <!--pad-4-->
+        <h1 class="font-bold mt-5 text-3xl ">Our Products</h1> <!--font bold,margintop-5,txt size-->
+        <input type="text" class="border border-black p-2 m-2" style="width: 80%;" placeholder="Search for a product..."> 
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <!--display-grid ,min size gridcol-2 2 in same row,max -grid col 4 in same row,marginTop-5,gap-5-->
+            <div>
+                <img src="./images/bestseller1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <!--inline centre,hover-shadow,touch its jump so we use 1st transform then translateY works-->
+                <h1>Rose Pot</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bestseller2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Snake Pot</h1>
+                <p>$40</p>
+            </div>
+            <div>
+                <img src="./images/bestseller4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Indoor Pot</h1>
+                <p>$30</p>
+            </div>
+            <div>
+                <img src="./images/bestseller5.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Lily Pot</h1>
+                <p>$40</p>
+            </div>
+            <div>
+                <img src="./images/bestseller3.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <!--inline centre,hover-shadow,touch its jump so we use 1st transform then translateY works-->
+                <h1>Hibisus Pot</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bestseller6.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>New Pet Pot</h1>
+                <p>$40</p>
+            </div>
+            <div>
+                <img src="./images/bestseller7.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>lotus Pot</h1>
+                <p>$30</p>
+            </div>
+            <div>
+                <img src="./images/bestseller8.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>white Rose Pot</h1>
+                <p>$40</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-3">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p> The Standard chunk of lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <p>@ 2021 Greenday.com</p>
+    </section>
+
+    
+</body>
+</html>

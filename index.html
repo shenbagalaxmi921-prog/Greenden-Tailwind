@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+    <!--Responsive Navbar-->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <!--background col green,pad-30px,flex(same line),center,split(jb),shadow(under shadow),sticky(we scroll its come top),when nav bar reach top-0 its stop,zindex-10 priority 1st-->
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6 md:hidden">
+            <path fill-rule="evenodd"
+                d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg> 
+        <!--menu bar , medium screen its hide(md:hid)-->
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <!--all in same line,gap,textcolour,for phone this not appear,if md screen then its show-->
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+                <!--when i touch its have underline,textcol black-->
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Header Section-->
+    <section class="bg-green-100 p-4  md:p-10 flex justify-center">
+        <!--BG col-green,px(left & right),py(top & bottom),all in same line,when its mdeium size p-10,js-cemtre-->
+        <div> <!--Flex col-->
+            <p class="mb-4">We offer you a wide range of Artifical and natural Flowers</p> <!--MarginBottom-4-->
+            <h2 class="font-bold text-3xl md:text-5xl mb-5">Plants for your Interior</h2> <!--font bold,txt size,when screen is medium size then txt size,MarginBottom-5-->
+            <div>
+                <button class="bg-black rounded p-2 text-white">Shop Now</button>
+                <!--bg col,round shape,pad-2,txtcol-white-->
+                <button class="border border-black rounded p-2">Watch video</button>
+                <!--border,borderCol-black,round,pad-2-->
+
+            </div>
+
+            <p class="mt-5">160+ Plants Species |100+ Clients</p> <!--MarginTop-5-->
+        </div>
+
+        <div class="hidden md:block p-5"> <!--hide in small size,show in md size,pad-5-->
+            <img src="./images/header-img.jpg" alt="header image" class="w-80"> <!--img widht-80-->
+        </div>
+
+    </section>
+    <!--About Section-->
+    <section class="text-center"> <!--txt come centre-->
+        <h1 class="text-3xl font-bold mt-5"> About US</h1> <!--txt size,bold,marginTop-5-->
+        <p>This site for those who admire the beauty and harmony of nature</p>
+
+        <div class="md:flex"> <!--When big screen it turn into flex,In ph screen its oe by one-->
+            <div class="border border-black p-2 m-6"> <!--border ,border col,padd-2,margin-6-->
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                    class="w-20 inline"><!-- wight-20,if txtCentre then we use inline then its came centre -->
+                    <path fill-rule="evenodd"
+                        d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h1.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75V4h3Z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M3 6a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm1.75 2.5a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5ZM4 11.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd" />
+                </svg>
+
+
+                <h2 class="text-xl font-medium">Large Assortment</h2> <!--txtsize,txtFontmedium-->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis velit ad atque in saepe harum
+                    culpa dolore ducimus reprehenderit, voluptatum, illo molestias ab animi voluptate rerum? Qui,
+                    voluptate. Error?</p>
+            </div>
+            <div class="border border-black p-2 m-6"> <!--border ,border col,padd-2,margin-6-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 inline">
+                    <!-- wight-20,if txtCentre then we use inline then its came centre -->
+                    <path fill-rule="evenodd"
+                        d="M12 5.25c1.213 0 2.415.046 3.605.135a3.256 3.256 0 0 1 3.01 3.01c.044.583.077 1.17.1 1.759L17.03 8.47a.75.75 0 1 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 0 0-1.06-1.06l-1.752 1.751c-.023-.65-.06-1.296-.108-1.939a4.756 4.756 0 0 0-4.392-4.392 49.422 49.422 0 0 0-7.436 0A4.756 4.756 0 0 0 3.89 8.282c-.017.224-.033.447-.046.672a.75.75 0 1 0 1.497.092c.013-.217.028-.434.044-.651a3.256 3.256 0 0 1 3.01-3.01c1.19-.09 2.392-.135 3.605-.135Zm-6.97 6.22a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.752-1.751c.023.65.06 1.296.108 1.939a4.756 4.756 0 0 0 4.392 4.392 49.413 49.413 0 0 0 7.436 0 4.756 4.756 0 0 0 4.392-4.392c.017-.223.032-.447.046-.672a.75.75 0 0 0-1.497-.092c-.013.217-.028.434-.044.651a3.256 3.256 0 0 1-3.01 3.01 47.953 47.953 0 0 1-7.21 0 3.256 3.256 0 0 1-3.01-3.01 47.759 47.759 0 0 1-.1-1.759L6.97 15.53a.75.75 0 0 0 1.06-1.06l-3-3Z"
+                        clip-rule="evenodd" />
+                </svg>
+
+
+                <h2 class="text-xl font-medium">Free and Fast Shipping</h2> <!--txtsize,txtFontmedium-->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis velit ad atque in saepe harum
+                    culpa dolore ducimus reprehenderit, voluptatum, illo molestias ab animi voluptate rerum? Qui,
+                    voluptate. Error?</p>
+            </div>
+            <div class="border border-black p-2 m-6"> <!--border ,border col,padd-2,margin-6-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 inline">
+                    <!-- wight-20,if txtCentre then we use inline then its came centre -->
+                    <path fill-rule="evenodd"
+                        d="M19.5 9.75a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l4.72-4.72a.75.75 0 1 1 1.06 1.06L16.06 9h2.69a.75.75 0 0 1 .75.75Z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                        clip-rule="evenodd" />
+                </svg>
+
+                <h2 class="text-xl font-medium">24/7 Support</h2> <!--txtsize,txtFontmedium-->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis velit ad atque in saepe harum
+                    culpa dolore ducimus reprehenderit, voluptatum, illo molestias ab animi voluptate rerum? Qui,
+                    voluptate. Error?</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Best seller-->
+    <section class="p-4 text-center"> <!--pad-4-->
+        <h1 class="font-bold mt-5 text-3xl ">Best Seller</h1> <!--font bold,margintop-5,txt size-->
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <!--display-grid ,min size gridcol-2 2 in same row,max -grid col 4 in same row,marginTop-5,gap-5-->
+            <div>
+                <img src="./images/bestseller1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <!--inline centre,hover-shadow,touch its jump so we use 1st transform then translateY works-->
+                <h1>Rose Pot</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bestseller2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Snake Pot</h1>
+                <p>$40</p>
+            </div>
+            <div>
+                <img src="./images/bestseller5.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Indoor Pot</h1>
+                <p>$30</p>
+            </div>
+            <div>
+                <img src="./images/bestseller4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Lily Pot</h1>
+                <p>$40</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Customer Reviews-->
+    <section class="text-center p-4">
+        <h1 class="font-bold mt-5 text-3xl">Customer Reviews</h1>
+        <div class="flex flex-col gap-5 justify-center text-white m-5">
+            <div class="bg-green-900 p-5 container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit beatae quos quaerat vitae, tempore
+                    facere.
+                    Placeat, veniam libero. A laboriosam nisi quas cumque, saepe fugiat facere officiis blanditiis odio
+                    accusamus?</p>
+
+                <p class="font-bold text-yellow-300">Genny Mathew</p>
+            </div>
+            <div class="bg-green-900  p-5 container">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit beatae quos quaerat vitae, tempore
+                    facere.
+                    Placeat, veniam libero. A laboriosam nisi quas cumque, saepe fugiat facere officiis blanditiis odio
+                    accusamus?</p>
+
+                <p class="font-bold text-yellow-300">Jim</p>
+
+            </div>
+            <div class="bg-green-900 p-5 container ">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit beatae quos quaerat vitae, tempore
+                    facere.
+                    Placeat, veniam libero. A laboriosam nisi quas cumque, saepe fugiat facere officiis blanditiis odio
+                    accusamus?</p>
+
+                <p class="font-bold text-yellow-300">Amir</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--New Letter-->
+    <section class="text-center">
+        <h1 class="font-bold text-3xl mt-5"> Join News Letter </h1>
+        <p> Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border border-black p-2 m-2" style="width: 80%;">
+        <br> <!--break tag-->
+        <button class="bg-black text-white p-3 m-1 underline">Subscribe</button>
+    </section>
+
+    <!--footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-3">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p> The Standard chunk of lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <p>@ 2021 Greenday.com</p>
+    </section>
+
+</body>
+
+</html>
